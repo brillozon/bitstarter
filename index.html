@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>PennyKeeper</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -95,8 +95,30 @@
         color: #ccccff;
       }
 
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */
+      div.addthis_toolbox {
+        width: 252px;
+        margin: 0 auto;
+      }
+
     </style>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-42839460-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
   </head>
+  <!-- Comment to have something to push when checking the dev/stage/prod flow -->
 
   <body>
     <!-- Mobile friendly navbar adapted from example. -->
@@ -130,7 +152,7 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>PennyKeeper</h1>
         </div>
       </div>
 
@@ -138,7 +160,7 @@
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead">the low risk path to retirement</p>
         </div>
       </div>
 
@@ -155,17 +177,17 @@
                 <!-- linediv-l and linediv-r give dividing lines that look different
                      in horizontal and vertical layouts, illustrating media queries. -->
                 <div class="linediv-l">
-                  <h3>1000</h3> <p>backers</p>
+                  <h3>50</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                  <h3>$250</h3> <p>of $8,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                  <h3>10</h3> <p>days left</p>
+                  <h3>30</h3> <p>days left</p>
                 </div>
               </div>
             </div> <!-- /statistics -->
@@ -175,45 +197,78 @@
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="bar bar-success" style="width:  3%;"></div>
+              <div class="bar bar-warning" style="width: 97%;"></div>
             </div>
           </div> <!-- /span10 offset1 -->
 
           <div class="span6 offset3 order">
-            <!-- Standard Bootstrap button. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
-          </div> <!-- /span6 offset3 order -->
+            <a class="coinbase-button" data-code="5fb348cc9ce10b9ad941f0fbbdeeb3b7"
+               data-button-style="custom_large"
+               data-button-text="Preorder with Bitcoin"
+               href="https://coinbase.com/checkouts/5fb348cc9ce10b9ad941f0fbbdeeb3b7">
+              Preorder With Bitcoin
+            </a>
+            <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+          </div>
 
-          <div class="span8 offset2 social">
+
+          <div class="span10 offset1 social">
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+            <a class="addthis_button_preferred_1"></a>
+            <a class="addthis_button_preferred_2"></a>
+            <a class="addthis_button_preferred_3"></a>
+            <a class="addthis_button_preferred_4"></a>
+            <a class="addthis_button_compact"></a>
+            <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fb1aed4413d654"></script>
+            <!-- AddThis Button END -->
+          </div>
+
+          <div class="hidden span10 offset1 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+            <button class="btn btn-google-plus"><i class="icon-google-plus"></i> | Google+</button>
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-          </div> <!-- /span6 offset3 order -->
+          </div> <!-- /span10 offset1 order -->
+
         </div> <!-- /span5 actions -->
       </div> <!-- /row-fluid pitch -->
 
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- httpL//placehold.it -->
+      <!-- http://placehold.it -->
 
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" src="http://i.imgur.com/0tvj6BP.jpg">
         </div>
         <div class="span5 copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            rhoncus nisi non blandit vulputate. Ut tincidunt leo rhoncus
-            pretium iaculis. Pellentesque nec ultrices velit. Suspendisse
-            potenti. Vestibulum rhoncus mi eget dignissim semper. Interdum
-            et malesuada fames ac ante ipsum primis in faucibus. Duis
-            molestie, lacus nec imperdiet scelerisque, quam massa
-            condimentum erat, in hendrerit nunc neque fermentum risus. Nam
-            laoreet ipsum a lacinia condimentum. Fusce vitae rutrum sem.
+            What&apos;s the best way to avoid losing money?
+          </p>
+
+          <p>
+            Believe it or not, it is <strong>NOT</strong> putting your savings
+            under the mattress.
+          </p>
+
+          <p>
+            Sophisticated investors and speculators use complicated
+            strategies involving derivatives, options, and other exotic
+            financial techniques.  Those with enough money will invest
+            it in a hedge fund that uses these and other techniques to
+            avoid losing their money.
+          </p>
+
+          <p>
+            As recent history - 1987, 1998, 2000, 2008 - demonstrates,
+            none of these strategies are entirely risk free.
           </p>
 
         </div>
@@ -221,23 +276,57 @@
 
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
+
           <p>
-            Morbi in elit nec lorem feugiat mollis a sed eros. Proin
-            congue risus elit, a vestibulum nulla dapibus
-            adipiscing. Morbi nibh nunc, consectetur et bibendum
-            in, cursus vitae libero. Class aptent taciti sociosqu
-            ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Vestibulum et leo turpis. Proin eu purus vel
-            dolor imperdiet placerat. Quisque at posuere lorem, iaculis
-            venenatis sem. Sed mollis orci felis, nec aliquam lacus
-            rhoncus ultricies. Phasellus semper consectetur arcu, eu
-            sodales leo.
+            So what if you don't have enough money to invest in a hedge
+            fund?  What if you do not want to use options, or forwards,
+            or futures, or swaps in order to manage your risk?
+            What if your largest nest egg is in an account that doesn't
+            even offer these as a possibility?
           </p>
+
+          <p>
+            This is the case for most
+            people working towards retirement.  They steadily save as
+            much as they can over their working career, and invest it in
+            tax deferred accounts such as Individual Retirement Accounts
+            (IRAs) or 401(k) company defined contribution retirement
+            accounts.  These kinds of accounts not only do not offer
+            sophisticated security trading and hedging strategies, they
+            are prevented from doing so by law.
+          </p>
+
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" src="http://i.imgur.com/WBNggLg.jpg">
         </div>
       </div> <!-- /row-fluid section2 -->
+
+      <div class="row-fluid section3">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="http://i.imgur.com/McvqlS4.png">
+        </div>
+        <div class="span5 copy">
+
+          <p>
+            Retirement investors that either do not want to or can not
+            use sophisticated financial strategies still want to reduce
+            the amount of their investments at risk.  They just achieve
+            this by a different means.
+          </p>
+
+          <p>
+            This is the type of investing that can benefit most from
+            using the PennyKeeper service.  You can track your investment
+            performance <em>and</em> risk over time using the service.
+            We can provide you the information to allocate your account to
+            optimize the performance to risk ratio of the total portfolio.
+            And you can do this by simply changing the amount you have
+            in the different available investments.
+          </p>
+
+        </div>
+      </div> <!-- /row-fluid section3 -->
 
       <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and boostrap.js as dependencies. -->
@@ -246,30 +335,64 @@
         <div class="span10 offset1">
           <h3>FAQ</h3>
           <div class="accordion" id="accordion2">
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseZero">
+                  Does using this service mean I won't lose any money?
+                </a>
+              </div>
+              <div id="collapseZero" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  No!  It means that you are less likely to lose money
+                  than if you don't.
+                </div>
+              </div>
+            </div> <!-- accordion-group -->
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                  Does using this service mean I will get a better return than anyone else?
+                </a>
+              </div>
+              <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  No!  It means that returns larger than yours are riskier
+                  (can lose more) than you.
+                </div>
+              </div>
+            </div> <!-- accordion-group -->
+
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                  What does FAQ stand for?
+                  What does Risk mean?
                 </a>
               </div> <!-- /accordion-heading -->
               <div id="collapseOne" class="accordion-body collapse">
                 <div class="accordion-inner">
-                  Frequently Asked Question.
+                  Here, it is the chance that you will lose money.
+                  It can be measured as a probability (percentage)
+                  or as an amount (value-at-risk).
                 </div>
               </div> <!-- /collapseOne -->
             </div> <!-- /accordion-group -->
+
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                  What's a Frequently Asked Question?
+                  What is Value-at-Risk (VaR)?
                 </a>
               </div>
               <div id="collapseTwo" class="accordion-body collapse">
                 <div class="accordion-inner">
-                  A question which is commonly asked by users.
+                  It is a measurement of risk that translates a percentage
+                  risk into a concrete dollar amount for your specific case.
                 </div>
               </div>
             </div> <!-- accordion-group -->
+
           </div> <!-- /accordion2 -->
         </div>
       </div> <!-- /row-fluid faq -->
@@ -287,5 +410,16 @@
       </div> <!-- /row-fluid footer -->
 
     </div> <!-- container -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42839460-1', 'herokuapp.com');
+      ga('send', 'pageview');
+    </script>
+
   </body>
 </html>
